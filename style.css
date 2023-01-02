@@ -1,0 +1,174 @@
+body{
+    /* background-image: url(bg/forBg.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-color: aliceblue;
+}  
+
+
+.myNavbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    margin: 0 auto;
+    background-color: rgb(27, 27, 123);
+    color: white
+}
+
+
+
+.fixed{
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    width: 1rem;
+    height: 1rem;
+}
+
+.myBigDiv {
+    /* width: 80%; */
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+
+.checkbox {
+    position: sticky;
+    z-index: 1;
+    margin-top: 7%;
+    margin-bottom: 3%;
+    padding: 2%;
+    padding-bottom: 30%;
+    border: 1px solid none;
+    border-radius: 15px;
+    background-color: gray;
+}
+.searchCost {
+    border-radius: 10px;
+    border: 1px solid red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.searchCost:hover {
+    color: red;
+    border: 3px solid blue;
+}
+#forRed {
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    background-color: red;
+    display: inline-block;
+}
+#forBlue {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: blue;
+    display: inline-block;
+}
+#forWhite {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    border:1px solid black ;
+    display: inline-block;
+}
+#forBlack {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+}
+#forGray {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: gray;
+    display: inline-block;
+}
+
+
+/*  */
+
+
+.images img{
+    width: 100%;
+    height: 100%;
+}
+.images {
+    width: 100%;
+    height: 15rem;
+}
+.cardShadow:hover{
+    box-shadow: 5px 15px 5px gray;
+    animation-name: cardShadow;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+
+}
+@keyframes cardShadow {
+    0%{
+        box-shadow: 0 5px 5px gray;
+    }
+    100%{
+        box-shadow: 5px 15px 5px gray;
+    }
+}
+
+
+/*  */
+
+.overalGrid {
+    background-color: rgb(30, 30, 30);
+    text-align: start;
+    margin: 0 auto;
+    padding: 2%;
+}
+.textDecoration{
+    text-decoration: none;
+    color: rgb(171, 178, 184);
+}
+.textDecoration:hover{
+    color: white;
+    margin-bottom: 1%;
+}
+
+.icons{
+    color:  gray;
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 2%;
+}
+.icons svg {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.icons svg:hover{
+    color: white;
+    box-shadow: 3px 5px 6px blue;
+    animation-name: icons;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    position: relative;
+}
+@keyframes icons {
+    0%{
+        /* transform: rotateY(0deg); */
+        color: blue;
+        box-shadow: 5px 5px 5px red ;
+    }
+    50%{
+        transform: rotateY(180deg);
+        color: yellow;
+        box-shadow: 5px 5px 5px yellow ;
+    }
+    100%{
+        /* transform: rotateY(360deg); */
+        color: red;
+        box-shadow: 5px 5px 5px  orangered ;
+    }
+}
